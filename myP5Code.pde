@@ -7,6 +7,7 @@ void setup() {
 var x = 200;
 var y = 100;
 
+
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   background(255,255,255,200);
@@ -23,8 +24,17 @@ void draw(){
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
-  
-
+ 
+ fill(200, 0, 0); // a nice froggy red mouth!
+ ellipse(x, y+20, 80, 20); // mouth
+ 
+  fill(0, 0, 0); // a nice froggy pupils!
+  ellipse(x+50, y-45, 10, 10); //pupil
+  ellipse(x-50, y-56, 10, 10); //pupil
+ 
+ 
+ x=mouseX
+ 
 }
 
 
